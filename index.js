@@ -12,3 +12,4 @@ function z() {
   x();
 }
 z();
+// closuresss
