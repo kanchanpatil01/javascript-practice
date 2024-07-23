@@ -27,3 +27,26 @@ function calculateAverageReduce(array) {
 const numbers1 = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 const average1 = calculateAverageReduce(numbers1);
 console.log(average1);
+
+// 2 -> count the occurences
+function countOccurences(array) {
+
+  const occurences = {};
+
+  for (let i = 0; i < array.length; i++) {
+    const value = array[i];
+    console.log(value, occurences);
+    if (occurences[value]) {
+      occurences[value]++;
+    } else {
+      occurences[value] = 1;
+    }
+  }
+
+  return occurences;
+
+}
+
+const numbers2 = [1, 1, 1, 2, 2, 3, 3, 3, 4, 5, 6, 7, 8, 8, 8, 8, 9];
+const occurences = countOccurences(numbers2);
+console.log(occurences);
