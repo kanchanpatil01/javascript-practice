@@ -1,0 +1,13 @@
+.container {
+    text-align: center; /* Center the inline-block elements horizontally */
+}
+
+.inline-block-element {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: lightblue;
+    line-height: 100px; /* Center the text vertically */
+    border: 1px solid #000;
+}
